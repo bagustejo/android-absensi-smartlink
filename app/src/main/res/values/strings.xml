@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LogiinFirestore</string>
+    <string name="name"> Name </string>
+    <string name="signup"> Sign Up</string>
+    <string name="title_profile">Profile</string>
+    <string name="email"> Email </string>
+    <string name="password"> Password </string>
+</resources>

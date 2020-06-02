@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F0566C</color>
+    <color name="colorPrimaryDark">#EC2945</color>
+    <color name="colorAccent">#C5CCEC</color>
+    //warna
+    <color name="Red1">#FF0000</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Grey">#DFDFE0</color>
+    <color name="Black">#000000</color>
+    <color name="Pitch">#FF5656</color>
+    <color name="Blue">#1400FF</color>
+</resources>

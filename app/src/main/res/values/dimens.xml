@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing">10dp</dimen>
+    <dimen name="big_spacing">15sp</dimen>
+    <dimen name="double_spacing">20dp</dimen>
+    <dimen name="super_spacing">40dp</dimen>
+    <dimen name="title_size">20sp</dimen>
+    <dimen name="bigtitle_size">40sp</dimen>
+    <dimen name="konten_size">15dp</dimen>
+    <dimen name="konten_height">200dp</dimen>
+    <dimen name="konten_weidth">300dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

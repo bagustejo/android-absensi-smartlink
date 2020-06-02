@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Auth.ActivityLogin">
+
+    <ImageView android:id="@+id/bglogin"
+               android:layout_width="0dp"
+               android:layout_height="0dp"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               />
+
+    <EditText
+        android:id="@+id/Emaillogin"
+        android:hint="EMAIl"
+        android:textSize="15sp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="46dp"
+        android:background="@drawable/bg_input"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Passwordlogin"
+        android:hint="PASSWORD"
+        android:textSize="15sp"
+        android:paddingEnd="25dp"
+        android:paddingStart="25dp"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_input"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Emaillogin" />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/loadingLogin"
+        app:layout_constraintTop_toTopOf="@id/button"
+        app:layout_constraintBottom_toBottomOf="@id/button"
+        app:layout_constraintStart_toEndOf="@id/button"
+        android:layout_marginStart="12dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_auth"
+        android:shadowRadius="40"
+        android:text="LOGIN"
+        android:textColor="@color/White"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Passwordlogin" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button"
+        >
+        <TextView
+            android:id="@+id/rambu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/buttonRegister"
+            android:text="Anda belum punya akun ? "
+            />
+
+        <TextView
+            android:id="@+id/daftar"
+            app:layout_constraintStart_toEndOf="@id/rambu"
+            app:layout_constraintTop_toBottomOf="@id/buttonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:textColor="@color/Red1"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
